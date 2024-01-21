@@ -1,8 +1,0 @@
-prefix=/home/kaviak/catkin_ws/devel
-
-Name: my_publisher_subscriber
-Description: Description of my_publisher_subscriber
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
