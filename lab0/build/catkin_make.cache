@@ -1,0 +1,2 @@
+.
+-DCATKIN_DEVEL_PREFIX=/home/kaviak/Documents/GitHub/EECE5554/lab0/devel -DCMAKE_INSTALL_PREFIX=/home/kaviak/Documents/GitHub/EECE5554/lab0/install -G Unix Makefiles

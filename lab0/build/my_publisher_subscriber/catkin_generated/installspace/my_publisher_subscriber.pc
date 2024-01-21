@@ -1,0 +1,8 @@
+prefix=/home/kaviak/catkin_ws/install
+
+Name: my_publisher_subscriber
+Description: Description of my_publisher_subscriber
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

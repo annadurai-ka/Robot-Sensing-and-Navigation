@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kaviak/catkin_ws/devel/setup.sh
