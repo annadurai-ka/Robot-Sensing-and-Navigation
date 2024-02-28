@@ -47,7 +47,7 @@ def UTCtoEpoch(UTC):
 
 if __name__ == '__main__':
     pub = rospy.Publisher('gps',Customgps, queue_size=10)
-    rospy.init_node('gps_driver_node', anonymous=True)
+    rospy.init_node('gps', anonymous=True)
     
     rate = rospy.Rate(10)
     rospy.loginfo("Publishing....................................")

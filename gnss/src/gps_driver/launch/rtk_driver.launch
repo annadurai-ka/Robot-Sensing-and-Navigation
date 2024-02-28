@@ -1,7 +1,7 @@
 <launch>
     <arg name="port" default="/dev/pts/4"/>
     
-    <node name="rtk_driver_node" pkg="gps_driver" type="rtk_driver.py" output="screen">
+    <node name="rtk_gnss" pkg="gps_driver" type="rtk_driver.py" output="screen">
         <param name="port" value="$(arg port)"/>
         <param name="baud" type = "int" value="4800"/>
     </node>

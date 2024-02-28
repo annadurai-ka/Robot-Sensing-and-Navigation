@@ -47,11 +47,10 @@ def UTCtoEpoch(UTC):
 
 if __name__ == '__main__':
     pub = rospy.Publisher('rtk_gnss',Customrtk, queue_size=10)
-    rospy.init_node('rtk_driver_node', anonymous=True)
+    rospy.init_node('rtk_gnss', anonymous=True)
     
     rate = rospy.Rate(10)
     rospy.loginfo("Publishing....................................")
-    bag=rosbag.Bag('/home/kaviak/catkin_ws/kavi.bag','w')
 
     while not rospy.is_shutdown():  
         serialPortAddr = rospy.get_param("~port","/dev/pts/4")
@@ -96,7 +95,7 @@ if __name__ == '__main__':
                 
                 pub.publish(msg)
     
-                bag.write('gps',msg)
+                
 
                 rate.sleep()
                 print("------------------------------------------")
@@ -123,7 +122,6 @@ if __name__ == '__main__':
                 continue
             
     print("Saving .bag file")
-    bag.close()
             
 
 
